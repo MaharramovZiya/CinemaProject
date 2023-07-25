@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Demo-Case</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="header">
+            <div class="openMenu"> 
+                <div class="menu-content">
+                    <div class="logo">
+                        LOGO
+                    </div>
+                    <nav>
+                            <div class="menu">
+                                <button class="menu-btn">Menu 1</button>
+                                <button class="menu-btn">Menu 2</button>
+                               
+                            </div>
+                    </nav>
+                    <div class="lang">
+                        <div class="lang-menu menu-btn" onclick="toggleLangMenu()">
+                            <span style="color: #fff;">TR</span> <img class="vectorImg" src="public/images/vector.svg"
+                                alt="">
+                            <div class="lang-dropdown">
+                                <button class="drop-btn menu-btn" onclick="changeLanguage('AR')">AR</button>
+                                <button class="drop-btn menu-btn" onclick="changeLanguage('TR')">TR</button>
+                                <button class="drop-btn menu-btn" onclick="changeLanguage('FR')">FR</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <nav class="navbar">
+                <div class="navbar-left">
+                    <div class="logo">Logo</div>
+                    <div class="menu">
+                        <button class="menu-btn">Menu 1</button>
+                        <button class="menu-btn">Menu 2</button>
+                        <div class="lang-menu menu-btn" onclick="toggleLangMenu()">
+                            <span style="color: #fff;">TR</span> <img class="vectorImg" src="public/images/vector.svg"
+                                alt="">
+                            <div class="lang-dropdown">
+                                <button class="drop-btn menu-btn" onclick="changeLanguage('AR')">AR</button>
+                                <button class="drop-btn menu-btn" onclick="changeLanguage('TR')">TR</button>
+                                <button class="drop-btn menu-btn" onclick="changeLanguage('FR')">FR</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="navbar-right">
+                    <div class="menu">
+                        <button class="watch-menu" onclick="toggleWatchListMenu()">Watchlist
+                            <span class="circle"></span>
+                            <div class="watchlist-dropdown">
+                                <span class="x-icon"><img src="public/images/codicon-add.svg" alt=""></span>
+                                <span class="lineCircle"></span>
+                                <div class="watch-line"></div>
+                                <div class="watch-list-box">
+                                    <div class="img-box">
+                                        <img src="public/images/image-rectangle-57.png" alt="">
+                                    </div>
+                                    <div class="content-box">
+                                        The Witcher
+                                    </div>
+                                </div>
+                                <div class="watch-list-box">
+                                    <div class="img-box">
+                                        <img src="public/images/theQueensGambit.png" alt="">
+                                    </div>
+                                    <div class="content-box">
+                                        The Queen's Gambit
+                                    </div>
+                                </div>
+                                <div class="watch-list-box">
+                                    <div class="img-box">
+                                        <img src="public/images/batman.png" alt="">
+                                    </div>
+                                    <div class="content-box">
+                                        The Dark Knight
+                                    </div>
+                                </div>
+                                <div class="watch-list-box">
+                                    <div class="img-box">
+                                        <img src="public/images/notimenoday.png" alt="">
+                                    </div>
+                                    <div class="content-box">
+                                        No Time To Day
+                                    </div>
+                                </div>
+                            </div>
+
+
+
+                        </button>
+                        <div class="signIn" onclick="toggleSignInButton()">Sign in
+
+                            <div class="signin-box signDisplay">
+                                <div class="exit-icon">
+                                    <img src="public/images/codicon-add.svg" alt="">
+                                </div>
+                                <h2>Sign In</h2>
+                                <span>Do you have an toog account?</span>
+
+                                <div class="email-box">
+                                    <label for="email">Email</label>
+                                    <input type="text" name="" id="email">
+                                </div>
+                                <div class="password-box">
+                                    <label for="password">Password</label>
+                                    <input type="text" name="" id="password">
+                                </div>
+                                <span class="f-password">Forgot password?</span>
+                                <div class="btns-group">
+                                    <span>Sign up</span>
+                                    <button>Sign In</button>
+                                </div>
+                                <div class="privacy-about">
+                                    <p>
+                                        This site is protected by reCAPTCHA and the Google <br>
+                                        Privacy Policy and Terms of Service apply.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="bar"  onclick="openMenuFunc()">
+                    <img src="public/images/bar.svg" alt="">
+                </div>
+            </nav>
+        
+            
+            <div class="volume-up" onclick="playRandomMusic()">
+                <div class="volumeImg-box">
+                    <img src="public/images/volume-up.svg" alt="">
+                </div>
+            </div>
+
+        </div>
+
+        <section class="movie-section">
+            <div class="carousel">
+                <div class="card">
+                    <img src="public/images/movieImages/bravenewWorld.jpg" alt="">
+                    <span>Brave New World</span>
+                    <div class="text-content">
+                        <div><img src="public/images/bytesize-heart.svg" alt=""></div>
+                        <div><img src="public/images/bx-bxl-play-store.svg" alt=""></div>
+                        <div><img src="public/images/ion-heart-dislike-outline.svg" alt=""></div>
+
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="public/images/movieImages/vanguard.jpg" alt="">
+                    <span>Vanguard</span>
+                    <div class="text-content">
+                        <div><img src="public/images/bytesize-heart.svg" alt=""></div>
+                        <div><img src="public/images/bx-bxl-play-store.svg" alt=""></div>
+                        <div><img src="public/images/ion-heart-dislike-outline.svg" alt=""></div>
+
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="public/images/movieImages/badtimesattheelroyale.jpg" alt="">
+                    <span>Bad Times At The El Royale</span>
+                    <div class="text-content">
+                        <div><img src="public/images/bytesize-heart.svg" alt=""></div>
+                        <div><img src="public/images/bx-bxl-play-store.svg" alt=""></div>
+                        <div><img src="public/images/ion-heart-dislike-outline.svg" alt=""></div>
+
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="public/images/movieImages/jhonwick3.jpg" alt="">
+                    <span>John Wick 3 Parabellum</span>
+                    <div class="text-content">
+                        <div><img src="public/images/bytesize-heart.svg" alt=""></div>
+                        <div><img src="public/images/bx-bxl-play-store.svg" alt=""></div>
+                        <div><img src="public/images/ion-heart-dislike-outline.svg" alt=""></div>
+
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="public/images/movieImages/inception.jpg" alt="">
+                    <span>Inception</span>
+                    <div class="text-content">
+                        <div><img src="public/images/bytesize-heart.svg" alt=""></div>
+                        <div><img src="public/images/bx-bxl-play-store.svg" alt=""></div>
+                        <div><img src="public/images/ion-heart-dislike-outline.svg" alt=""></div>
+
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="public/images/movieImages/oppenheimer.jpg" alt="">
+                    <span>Oppenheimer</span>
+                    <div class="text-content">
+                        <div><img src="public/images/bytesize-heart.svg" alt=""></div>
+                        <div><img src="public/images/bx-bxl-play-store.svg" alt=""></div>
+                        <div><img src="public/images/ion-heart-dislike-outline.svg" alt=""></div>
+
+                    </div>
+                </div>
+
+             
+               
+            </div>
+            <div class="carousel carousel2">
+                
+                <div class="card" onmouseover="showTextContent()" onmouseout="hideTextContent()">
+                    <img src="public/images/movieImages/oppenheimer.jpg" alt="">
+                    <span>Oppenheimer</span>
+                    <div class="text-content">
+                        <div><img src="public/images/bytesize-heart.svg" alt=""></div>
+                        <div><img src="public/images/bx-bxl-play-store.svg" alt=""></div>
+                        <div><img src="public/images/ion-heart-dislike-outline.svg" alt=""></div>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="public/images/movieImages/tenet.jpg" alt="">
+                    <span>Tenet</span>
+                    <div class="text-content">
+                        <div><img src="public/images/bytesize-heart.svg" alt=""></div>
+                        <div><img src="public/images/bx-bxl-play-store.svg" alt=""></div>
+                        <div><img src="public/images/ion-heart-dislike-outline.svg" alt=""></div>
+
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="public/images/movieImages/jhonwick3.jpg" alt="">
+                    <span>John Wick 3 Parabellum</span>
+                    <div class="text-content">
+                        <div><img src="public/images/bytesize-heart.svg" alt=""></div>
+                        <div><img src="public/images/bx-bxl-play-store.svg" alt=""></div>
+                        <div><img src="public/images/ion-heart-dislike-outline.svg" alt=""></div>
+
+                    </div>
+                </div>
+               
+                <div class="card">
+                    <img src="public/images/movieImages/vanguard.jpg" alt="">
+                    <span>Vanguard</span>
+                    <div class="text-content">
+                        <div><img src="public/images/bytesize-heart.svg" alt=""></div>
+                        <div><img src="public/images/bx-bxl-play-store.svg" alt=""></div>
+                        <div><img src="public/images/ion-heart-dislike-outline.svg" alt=""></div>
+
+                    </div>
+                </div>
+              
+
+                
+                <div class="card">
+                    <img src="public/images/movieImages/badtimesattheelroyale.jpg" alt="">
+                    <span>Bad Times At The El Royale</span>
+                    <div class="text-content">
+                        <div><img src="public/images/bytesize-heart.svg" alt=""></div>
+                        <div><img src="public/images/bx-bxl-play-store.svg" alt=""></div>
+                        <div><img src="public/images/ion-heart-dislike-outline.svg" alt=""></div>
+
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="public/images/movieImages/bravenewWorld.jpg" alt="">
+                    <span>Brave New World</span>
+                    <div class="text-content">
+                        <div><img src="public/images/bytesize-heart.svg" alt=""></div>
+                        <div><img src="public/images/bx-bxl-play-store.svg" alt=""></div>
+                        <div><img src="public/images/ion-heart-dislike-outline.svg" alt=""></div>
+
+                    </div>
+                </div>
+
+               
+
+               
+            </div>
+
+            <div id="leftRow" class="row1 row">
+                <img src="public/images/row1.svg" alt="">
+            </div>
+            <div id="rightRow" class="row2 row">
+                <img src="public/images/row2.svg" alt="">
+            </div>
+            <div id="leftRow2" class="row3 row-b">
+                <img src="public/images/row1.svg" alt="">
+            </div>
+            <div id="rightRow2" class="row4 row-b">
+                <img src="public/images/row2.svg" alt="">
+            </div>
+
+        </section>
+
+    </div>
+
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>
