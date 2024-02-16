@@ -9,7 +9,7 @@ function toggleLangMenu() {
   }
   
   function changeLanguage(lang) {
-    console.log(`Dil değiştirildi: ${lang}`);
+    console.log(`Changed Language: ${lang}`);
   }
   
 
