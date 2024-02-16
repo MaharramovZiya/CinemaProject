@@ -131,6 +131,6 @@ carousel2.addEventListener("touchend", dragStop);
 //open menu
 function openMenuFunc() {
   const openMenu = document.querySelector('.openMenu');
-  openMenu.classList.toggle('showAndClose'); // Display özelliğini toggle edin
+  openMenu.classList.toggle('showAndClose'); 
   console.log("working!");
 }
